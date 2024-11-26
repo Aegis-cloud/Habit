@@ -1,0 +1,11 @@
+<html>
+<body>
+    <?php
+    session_start();
+    if($_SESSION['cart_count']==0)
+        header("location:empty_cart.html");
+    else
+        header("location:cart.php");
+    ?>
+    </body>
+</html>
